@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["notes_server*"]
+
+[project]
+name = "tool-server-starter"
+version = "0.1.0"
+description = "Minimal MCP tool server with in-memory notes and smoke tests"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "mcp>=1.2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3.0", "ruff>=0.8.0"]
+
+[project.scripts]
+notes-mcp-server = "notes_server.server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: MCP stdio integration (optional)"]

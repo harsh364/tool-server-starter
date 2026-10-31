@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+notes_server/__init__.py
+notes_server/__main__.py
+notes_server/server.py
+notes_server/store.py
+notes_server/tools.py
+tool_server_starter.egg-info/PKG-INFO
+tool_server_starter.egg-info/SOURCES.txt
+tool_server_starter.egg-info/dependency_links.txt
+tool_server_starter.egg-info/entry_points.txt
+tool_server_starter.egg-info/requires.txt
+tool_server_starter.egg-info/top_level.txt

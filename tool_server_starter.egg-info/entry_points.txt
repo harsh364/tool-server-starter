@@ -1,0 +1,2 @@
+[console_scripts]
+notes-mcp-server = notes_server.server:main
